@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Learning JavaScript</title>
-	<link ref="stylesheet" href="style.css"/>
+	<title>Rutgers Guide</title>
+	<meta charset="utf-8">
+	<link href="bootstrap-4.2.1-dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 	<div class="headed">
@@ -16,12 +17,16 @@
 	<button onclick="showDate()">Show Date</button>
 	</div>
 <!-- Scripting -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
 <script>
 	/*function changeText(){
 		//id.innerHTML = "I changed your text";
 		var header = document.getElementById('header');
 		header.innerHTML = 'You Clicked!';	
 	}*/
+
+
 	function showDate(){
 		var time = document.getElementById('header');
 		time.innerHTML = Date();
