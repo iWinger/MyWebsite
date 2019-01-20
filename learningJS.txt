@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rutgers Guide</title>
+	<meta charset="utf-8">
+	<link href="bootstrap-4.2.1-dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  </li>
+</ul>
+	<div class="headed">
+		<h1 id="header">Learning JavaScript</h1>
+		<p>With Wingjun Chan</p>
+	</div>
+
+	<div class="container">
+<!--	<button onclick="this.innerHTML = 'You Clicked!'">Click Me</button>-->
+	<!--<button onclick='changeText()'>Click Me</button> -->
+	<button onclick="showDate()">Show Date</button>
+	</div>
+<!-- Scripting -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+<script>
+	/*function changeText(){
+		//id.innerHTML = "I changed your text";
+		var header = document.getElementById('header');
+		header.innerHTML = 'You Clicked!';	
+	}*/
+
+
+	function showDate(){
+		var time = document.getElementById('header');
+		time.innerHTML = Date();
+	}
+	//Variables
+	/*Can be started by letters,numbers,underscores,dollar signs */
+	//Number
+	/*var num = '35'
+	var num2 = '40';
+	alert(num+num2);
+	*/
+	//String
+	/*Var myFavorite = "Test";*/
+	//Array
+	/*var colors = ['red','blue','green'];
+	var myColors = new Array('red','yellow','orange');
+	myColors[2] = 'black';
+	myColors.push('Green');
+	myColors.pop();
+	alert(myColors.length);
+	alert((myColors.reverse()).sort());
+	alert(myColors);
+	alert(myColors.reverse());
+	alert(myColors);
+	*/
+	/*function Fruit(name,shape,color){
+		this.name = name;
+		this.shape = shape;
+		this.color = color;
+
+		this.describe = function(){
+			return 'A ' + this.name + ' , ' + this.shape + 'and ' + this.color;
+		}
+	}
+
+	var myApple = new Fruit('melon','sphere','green');
+	alert(myApple.describe());*/
+	//Object
+	/*var users = [
+	{
+		name: 'Wingjun',
+		age: 20
+	},
+	{
+		name:'Kevin',
+		age:25
+	}
+
+	];
+	console.log(users[0].name);
+	*/
+
+	
+</script>
+
+
+</body>
+</html>
